@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1c6c82;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0b022e, #0072ff);
+    color: white;
+}
+
+.hero span {
+    color: #111;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px;
+}
+
+.story h2,
+.info h2 {
+    margin-bottom: 15px;
+}
+
+.story p,
+.info p {
+    line-height: 1.6;
+}
+
+.story button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #112237;
+    color: white;
+    cursor: pointer;
+}
+
+.story button:hover {
+    background-color: #132844;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+.contact {
+    text-align: center;
+    padding: 40px;
+    background-color: #111;
+    color: white;
+}
+
+.projects {
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.projects h2 {
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(82, 24, 24, 0.2);
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact i {
+    margin-right: 10px;
+    color: #0072ff; /* icon color */
+}
